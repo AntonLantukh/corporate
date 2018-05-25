@@ -1,0 +1,18 @@
+// Служебные
+@import "normalize.scss";
+@import "font.scss";
+@import "variables.scss";
+@import "visually-hidden.scss";
+/// Основные блоки
+@import "header-top.scss";
+@import "nav-header-top.scss";
+@import "header-bottom.scss";
+@import "nav-header-bottom.scss";
+@import "breadcrumbs.scss";
+@import "news.scss";
+@import "slider-pictures.scss";
+@import "social.scss";
+@import "slider-news.scss";
+@import "footer-top.scss";
+@import "nav-footer.scss";
+@import "footer-bottom.scss";

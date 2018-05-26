@@ -1,0 +1,33 @@
+.nav-header-bottom__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 850px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-header-bottom__element {
+  display: block;
+  padding: 20px 30px;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "Open Sans Regular", "Arial", sans-serif;
+  color: $color-black;
+  text-decoration: none;
+
+  &:hover {
+    padding: 20px 30px 18px;
+    background-color: $color-white;
+    border-bottom: 2px solid $color-green;
+    color: $color-green;
+  }
+
+  &:focus {
+    padding: 20px 30px 18px;
+    background-color: $color-white;
+    border-bottom: 2px solid $color-green;
+    color: $color-green;
+  }
+}

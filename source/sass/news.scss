@@ -1,0 +1,42 @@
+.news__wrapper {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.news__header {
+  margin: 0 0 30px;
+  font-size: 40px;
+  line-height: 50px;
+  font-family: "Open Sans Regular", "Arial", sans-serif;
+  color: $color-black;
+  font-weight: normal;
+}
+
+.news__date {
+  display: block;
+  margin: 0 0 30px;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "Open Sans Regular", "Arial", sans-serif;
+  color: $color-black;
+}
+
+.news__image {
+  margin-bottom: 40px;
+}
+
+.news__label {
+  padding-bottom: 24px;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  color: $color-black;
+  quotes: none;
+}
+
+.news__paragraph {
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "Open Sans Regular", "Arial", sans-serif;
+  color: $color-black;
+}

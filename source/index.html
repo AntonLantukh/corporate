@@ -97,30 +97,37 @@
       </div>
       <div class="news__slider-pictures slider-pictures">
         <div class="slider-pictures__main-slide">
-          <img src="#" alt="Рудник">
+          <img class="slider-pictures__main-image" src="./img/newyork.jpg" alt="Рудник" width="1290" height="640">
           <span>Разработка месторождения рудника «Заполярный»</span>
         </div>
         <div class="slider-pictures__container">
-          <img src="#" alt="" class="slider-pictures__slide">
-          <img src="#" alt="" class="slider-pictures__slide">
-          <img src="#" alt="" class="slider-pictures__slide">
-          <img src="#" alt="" class="slider-pictures__slide">
-          <img src="#" alt="" class="slider-pictures__slide">
-          <img src="#" alt="" class="slider-pictures__slide">
-          <img src="#" alt="" class="slider-pictures__slide">
-          <img src="#" alt="" class="slider-pictures__slide">
-          <img src="#" alt="" class="slider-pictures__slide">
-          <img src="#" alt="" class="slider-pictures__slide">
-          <img src="#" alt="" class="slider-pictures__slide">
-          <img src="#" alt="" class="slider-pictures__slide">
-          <img src="#" alt="" class="slider-pictures__slide">
-          <img src="#" alt="" class="slider-pictures__slide">
-          <img src="#" alt="" class="slider-pictures__slide">
-          <img src="#" alt="" class="slider-pictures__slide">
+          <div class="slider-pictures__container">
+            <button class="slider-pictures__button slider-pictures__button--left">Влево</button>
+            <div class="slider-pictures__wrapper">
+              <div class="slider-pictures__slide--active">
+                <img src="./img/newyork.jpg" alt="Компьютер" class="slider-pictures__slide">
+              </div>
+              <img src="./img/city.jpg" alt="Город" class="slider-pictures__slide">
+              <img src="./img/deal.jpg" alt="Сделка" class="slider-pictures__slide">
+              <img src="./img/desk.jpg" alt="Стол" class="slider-pictures__slide">
+              <img src="./img/computer.jpg" alt="Нью-Йорк" class="slider-pictures__slide">
+              <img src="./img/notes.jpg" alt="Заметки" class="slider-pictures__slide">
+              <img src="./img/office.jpg" alt="Офис" class="slider-pictures__slide">
+              <img src="./img/list.jpg" alt="Список" class="slider-pictures__slide">
+              <img src="./img/city.jpg" alt="Город" class="slider-pictures__slide">
+              <img src="./img/deal.jpg" alt="Сделка" class="slider-pictures__slide">
+              <img src="./img/desk.jpg" alt="Стол" class="slider-pictures__slide">
+              <img src="./img/computer.jpg" alt="Нью-Йорк" class="slider-pictures__slide">
+              <img src="./img/notes.jpg" alt="Заметки" class="slider-pictures__slide">
+              <img src="./img/office.jpg" alt="Офис" class="slider-pictures__slide">
+              <img src="./img/list.jpg" alt="Список" class="slider-pictures__slide">
+            </div>
+            <button class="slider-pictures__button slider-pictures__button--right">Вправо</button>
+          </div>
         </div>
       </div>
       <div class="news__wrapper">
-        <img class="news__image" src="#" alt="Офис" width="180" height="160">
+        <img class="news__image" src="./img/achievement.jpg" alt="Офис" width="940" height="450">
         <p class="news__paragraph">
             &mdash; IPO «РуссНефти» было очень успешным, но за последние полгода
             ее акции подорожали менее чем на 10% &mdash; c 550 руб. до примерно
@@ -137,21 +144,31 @@
           втором полугодии ситуация изменится, цена начнет расти и инвестор
           потянется.
         </p>
-        <video class="news__video">
-          <source src="#">
-        </video>
-        <span class="news__video-label">НК Нефтиса</span>
+        <div class="news__video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/haeI_mF5yL0" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+          <span class="news__video-label">НК Нефтиса</span>
+        </div>
       </div>
       <footer class="news__footer">
-        <a href="#" class="news__back">Назад к новостям</a>
+        <a href="#" class="news__back oval-button">Назад к новостям</a>
         <div class="news__share">
-          <span>Поделиться статьей</span>
+          <span class="news__share-label">Поделиться статьей</span>
           <ul class="social">
-            <li class="social__element"></li>
-            <li class="social__element"></li>
-            <li class="social__element"></li>
-            <li class="social__element"></li>
-            <li class="social__element"></li>
+            <li class="social__element">
+              <a href="#" class="">Twitter</a>
+            </li>
+            <li class="social__element">
+              <a href="#" class="">Facebook</a>
+            </li>
+            <li class="social__element">
+              <a href="#" class="">Vkontakte</a>
+            </li>
+            <li class="social__element">
+              <a href="#" class="">Odnoklassniki</a>
+            </li>
+            <li class="social__element">
+              <a href="#" class="">Google</a>
+            </li>
           </ul>
         </div>
       </footer>
@@ -208,4 +225,5 @@
     </div>
   </footer>
 </body>
+<script type="text/javascript" src="./js/slider-pictures.js"></script>
 </html>

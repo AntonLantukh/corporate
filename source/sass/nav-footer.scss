@@ -1,0 +1,24 @@
+.nav-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 530px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-footer__element {
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "Open Sans Regular", "Arial", sans-serif;
+  color: $color-grey-dark;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-green;
+  }
+
+  &:focus {
+    color: $color-green;
+  }
+}

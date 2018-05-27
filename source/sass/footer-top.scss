@@ -1,0 +1,13 @@
+.footer-top {
+  width: 100%;
+  background-color: $color-blue-dark;
+}
+
+.footer-top__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 940px;
+  margin: 0 auto;
+  padding: 20px 0;
+}

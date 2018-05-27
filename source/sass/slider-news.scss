@@ -28,9 +28,19 @@
   font-size: 0;
 }
 
+.slider-news__container--first {
+  overflow: hidden;
+}
+
+.slider-news__container--second {
+  transition-property: margin-left;
+  transition-duration: 0.5s;
+}
+
 .slider-news__element {
   position: relative;
   width: 220px;
+  margin-right: 20px;
   cursor: pointer;
   transition-property: box-shadow, background-color;
   transition-duration: 0.5s;

@@ -1,21 +1,21 @@
-'use strict';
+`use strict`;
 
-const thumbsContainer = document.querySelector('.slider-pictures__wrapper');
-const mainImg = document.querySelector('.slider-pictures__main-image');
-const textImg = document.querySelector('.slider-pictures__text');
-const countImg = document.querySelector('.slider-pictures__count');
+const thumbsContainer = document.querySelector(`.slider-pictures__wrapper`);
+const mainImg = document.querySelector(`.slider-pictures__main-image`);
+const textImg = document.querySelector(`.slider-pictures__text`);
+const countImg = document.querySelector(`.slider-pictures__count`);
 
-const buttonLeft = document.querySelector('.slider-pictures__button--left');
-const buttonRight = document.querySelector('.slider-pictures__button--right');
-const nodes = document.querySelectorAll('.slider-pictures__slide');
+const buttonLeft = document.querySelector(`.slider-pictures__button--left`);
+const buttonRight = document.querySelector(`.slider-pictures__button--right`);
+const nodes = document.querySelectorAll(`.slider-pictures__slide`);
 const displayedElements = 7;
 const widthSize = 161.25;
 let marginValue = 0;
 
 // Image click
-thumbsContainer.addEventListener('click', function(evt) {
-  const chosenImgDiv = document.querySelector('.slider-pictures__slide--active');
-  if (evt.target.tagName === 'IMG') {
+thumbsContainer.addEventListener(`click`, function(evt) {
+  const chosenImgDiv = document.querySelector(`.slider-pictures__slide--active`);
+  if (evt.target.tagName === `IMG`) {
 
     unwrap(chosenImgDiv);
     wrap(evt.target);
@@ -24,35 +24,35 @@ thumbsContainer.addEventListener('click', function(evt) {
     debugger;
     mainImg.setAttribute(`style`, `opacity: 0`);
     setTimeout(() => {
-      mainImg.setAttribute('src', evt.target.src)
+      mainImg.setAttribute(`src`, evt.target.src)
       mainImg.setAttribute(`style`, `opacity: 1`);
     }, 400);
     textImg.textContent = evt.target.dataset.text;
-    countImg.textContent = nodeNumber + ' / ' + nodes.length;
+    countImg.textContent = nodeNumber + ` / ` + nodes.length;
   }
 });
 
 // Button click
-buttonLeft.addEventListener('click', function() {
+buttonLeft.addEventListener(`click`, function() {
   marginValue = Math.min(marginValue + widthSize, widthSize);
-  thumbsContainer.setAttribute('style', 'margin-left:' + marginValue + 'px');
+  thumbsContainer.setAttribute(`style`, `margin-left:` + marginValue + `px`);
 })
 
-buttonRight.addEventListener('click', function() {
+buttonRight.addEventListener(`click`, function() {
   marginValue = Math.max(marginValue - widthSize, -widthSize * (nodes.length - displayedElements));
-  thumbsContainer.setAttribute('style', 'margin-left:' + marginValue + 'px');
+  thumbsContainer.setAttribute(`style`, `margin-left:` + marginValue + `px`);
 })
 
 
 const unwrap = (node) => {
-  node.classList.remove('slider-pictures__slide--active');
+  node.classList.remove(`slider-pictures__slide--active`);
   thumbsContainer.insertBefore(node.children[0], node);
   node.remove();
 }
 
 const wrap = (node) => {
-  const div = document.createElement('div');
-  div.classList.add('slider-pictures__slide--active');
+  const div = document.createElement(`div`);
+  div.classList.add(`slider-pictures__slide--active`);
   thumbsContainer.insertBefore(div, node);
   div.appendChild(node);
 }

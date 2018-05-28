@@ -9,6 +9,11 @@
   margin: 0 auto 20px;
 }
 
+.slider-pictures__main-image {
+  transition-property: opacity;
+  transition-duration: 0.8s;
+}
+
 .slider-pictures__label {
   position: absolute;
   bottom: 0;

@@ -21,7 +21,12 @@ thumbsContainer.addEventListener('click', function(evt) {
     wrap(evt.target);
     let nodeNumber = defineNumber();
 
-    mainImg.setAttribute('src', evt.target.src);
+    debugger;
+    mainImg.setAttribute(`style`, `opacity: 0`);
+    setTimeout(() => {
+      mainImg.setAttribute('src', evt.target.src)
+      mainImg.setAttribute(`style`, `opacity: 1`);
+    }, 400);
     textImg.textContent = evt.target.dataset.text;
     countImg.textContent = nodeNumber + ' / ' + nodes.length;
   }

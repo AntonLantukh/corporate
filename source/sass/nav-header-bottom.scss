@@ -11,6 +11,8 @@
 .nav-header-bottom__element {
   display: block;
   padding: 20px 30px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
   font-size: 12px;
   line-height: 18px;
   font-family: "Open Sans Regular", "Arial", sans-serif;

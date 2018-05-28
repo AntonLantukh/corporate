@@ -1,0 +1,19 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "Open Sans Regular", "Arial", sans-serif;
+  color: $color-black;
+}
+
+.table__header {
+  background-color: rgb(169, 177, 182);
+  text-align: center;
+}
+
+.table td {
+  padding: 5px;
+  border: 1px solid $color-grey;
+  border-collapse: collapse;
+}
